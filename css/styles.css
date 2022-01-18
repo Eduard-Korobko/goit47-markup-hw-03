@@ -1,0 +1,223 @@
+/* Основной цвет текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* Цвет активной кнопки #2196F3 */
+/* Цвет НЕ активной кнопки #F5F4FA */
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --acent-color: #2196F3;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+body a{
+    text-decoration: none;
+}
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ СТУДИЯ */
+
+li{
+    list-style: none;
+}
+
+/* Логотип WebStudio */
+.logo{
+    color:var(--primary-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+/* .logo. color{
+color:var(--acent-color);
+} */
+/* Навигационные ссылки в верхней линии */
+
+.nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav :hover,
+.nav :focus {
+    color:var(--acent-color);
+}
+
+.color-black a {
+    color: var(--primary-text-color);
+}
+
+.color-grey a{
+    color: var(--title-text-color);
+}
+
+.color-active a{
+    color: var(--acent-color);
+}
+
+/* Секция 1 Заголовок Н1 Эффективные решения для вашего бизнеса*/
+section.one{
+    /* position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px; */
+    background-color: #2F303A;
+}
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;   
+}
+.one button{
+   
+    width: 200px;
+    height: 50px;
+
+     /* position: absolute; */
+    /* left: 700px; */
+    /* top: 430px; */
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    background-color: var(--acent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.one button:hover,
+.one button:focus {
+    background-color:#188CE8;
+  
+}
+/* Секция 2 Наши особенности */
+.section{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+}
+.section .title-black{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.section .title-grey{
+    line-height: 1.71;
+    color:var(--title-text-color);
+}
+
+/* Секция Наши проекты */
+.projects .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+}
+
+/* Секция Наша команда */
+.team{
+    background-color: #F5F4FA;
+    letter-spacing: 0.03em;
+}
+.team .title{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+.team .title-size{
+    line-height: 1.19;
+    font-size: 16px;
+}
+.team .title-black{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+.team .title-grey{
+    color:var(--title-text-color)
+}
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ ПОРТФОЛИО */
+
+    .feature-list .title-black {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color:var(--primary-text-color);
+    }
+    
+    .feature-list .title-grey {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+    }
+/* Стили кнопок на странице Портфолио */
+   .color .active {
+        background-color: var(--acent-color);
+        color: #FFFFFF;
+    }
+
+        .color button {
+            font-family: Roboto, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.62;
+            background-color: #F5F4FA;
+            color:var(--primary-text-color);
+            letter-spacing: 0.03em;
+
+            border-radius: 4px;
+    }
+    
+    .color button:hover,
+    .color button:focus {
+        background-color:var(--acent-color);
+        color:#FFFFFF;
+
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        
+    }
+
+
+/* Навигационные ссылки в футере */
+address {
+    font-style: normal;
+}
+.footer {
+    background-color: #2F303A;
+}
+.footer .logo{
+    color: #FFFFFF;
+}
+.footer .title-white {
+    color: #FFFFFF;
+}
+.footer .title-rgba {  
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer :hover,
+.footer :focus {
+    color: var(--acent-color);
+}
