@@ -62,7 +62,7 @@ li{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+
     min-width: 1200px;
     border-bottom: 1px solid #ECECEC;
 }
@@ -252,6 +252,7 @@ li{
 
 /* Секция 4 Наша команда */
 .team{
+    min-width: 1200px;
     background-color: #F5F4FA;
     letter-spacing: 0.03em;
 
