@@ -62,7 +62,8 @@ li{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+    
+    min-width: 1200px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -117,6 +118,7 @@ li{
 .one {
     text-align: center;
     background-color: #2F303A;
+    min-width: 1200px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -419,6 +421,7 @@ address {
 }
 .footer {
     background-color: #2F303A;
+    min-width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
