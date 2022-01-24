@@ -55,9 +55,7 @@ li{
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-/* .logo. color{
-color:var(--acent-color);
-} */
+
 /* Навигационные ссылки в верхней линии */
 .nav{
     font-weight: 500;
@@ -65,7 +63,7 @@ color:var(--acent-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .site-nav{
@@ -115,14 +113,16 @@ color:var(--acent-color);
     margin-left: 50px;
 }
 /* Секция 1 Заголовок Н1 Эффективные решения для вашего бизнеса*/
+
 .one {
-    /* position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px; */
     text-align: center;
     background-color: #2F303A;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .first-title {
     font-weight: 900;
@@ -168,10 +168,19 @@ color:var(--acent-color);
     padding-bottom: 94px;
 }
 .section-title {
-    font-size: 0%;
-    margin-top: 0;
-    /* margin-bottom: 94px; */
-}
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
 .feature-list {
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +201,8 @@ color:var(--acent-color);
     line-height: 1.14;
     text-transform: uppercase;
 
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .section .title-grey{
     line-height: 1.71;
@@ -216,6 +226,10 @@ color:var(--acent-color);
 .project-list .item {
     width: 370px;
     margin-right: 30px;
+}
+
+.project-list .item img{
+    display: block;
 }
 
 .project-list .item:nth-child(3n){
@@ -297,12 +311,12 @@ color:var(--acent-color);
 }
 
 /* ===============СТИЛИ ДЛЯ СТРАНИЦЫ ПОРТФОЛИО =============== */
-
    
 /* Секция с кнопками на странице Портфолио */
     .button-list{
         display: flex;
-        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
         padding: 0px;
         justify-content: center;
     }
@@ -343,9 +357,9 @@ color:var(--acent-color);
         cursor: pointer;
     }
 
-    .buttons {
+    .buttons-projects {
         padding-top: 94px;
-        padding-bottom: 50px;
+        padding-bottom: 94px;
     }
 /* Секция с проектами на страницы Портфолио */
 .project-list-portfolio{
@@ -374,8 +388,8 @@ color:var(--acent-color);
     line-height: 2.0;
     letter-spacing: 0.06em;
     color:var(--primary-text-color);
-
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 4px;
 }
 
 .project-list-portfolio .title-grey {
@@ -392,14 +406,13 @@ color:var(--acent-color);
     padding: 0px;
 }
 .project-list-portfolio .item .indent {
-    margin-top: -5px;
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+
 }
 
-.projects {
-    padding-bottom: 94px;
-}
 /* Навигационные ссылки в футере */
 address {
     font-style: normal;
@@ -443,11 +456,6 @@ address {
     padding-left: 15px;
     padding-right: 15px;
 
-}
-
-.one{
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .footer ul{
